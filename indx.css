@@ -1,0 +1,85 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* height: 100vh; */
+  background-color: black;
+  overflow-x:hidden;
+  overflow-y:auto;
+
+}
+h1{
+  color: aqua;
+  text-align: center;
+}
+body > p{
+  color: rgb(226, 12, 47);
+  text-align: center;
+}
+.pricebox{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  max-width:1000px;
+  height: auto;
+text-align: center;
+gap: 20px;
+margin: 50px auto;
+}
+.plan{
+  height: auto;
+  width: 300px;
+  padding: 15px;
+  background-color: grey;
+  border: none;
+  border-radius:10px ;
+
+}
+.plan:hover{
+  transform: scale(1.1);
+  
+}
+.plan h2{
+  font-size: large;
+  text-align: center;
+}
+.plan p{
+  font-size: medium;
+  font-weight: bolder;
+}
+.plan ul{
+  text-align: center;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+button{
+  padding: 10px 20px;
+  background-color: rgba(9, 131, 202, 0.993);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+ 
+}
+button:hover{
+  background-color: rgb(20, 79, 240);
+  transform: scale(0.9);
+  
+}
+.plan li{
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease;
+
+}
+.plan li:hover {
+  border-color: aqua;
+}
+@media (max-width: 780px) {
+  .pricebox {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
